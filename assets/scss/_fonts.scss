@@ -1,0 +1,39 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3233799, 2016-06-16T07:33:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FF Meta Web Pro Normal by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/ff-meta/pro-normal/
+ * 
+ * Webfont: FF Meta Web Pro Medium by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/ff-meta/pro-medium/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3233799
+ * Licensed pageviews: 50,000
+ * Webfonts copyright: 2009 Erik Spiekermann published by FSI FontShop International GmbH
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@import url("//hello.myfonts.net/count/315807");
+@font-face {
+    font-family: 'FFMetaWebProNormal';
+    src: url('../fonts/webfonts/315807_0_0.eot');
+    src: url('../fonts/webfonts/315807_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/315807_0_0.woff2') format('woff2'), url('../fonts/webfonts/315807_0_0.woff') format('woff'), url('../fonts/webfonts/315807_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FFMetaWebProMedium';
+    src: url('../fonts/webfonts/315807_1_0.eot');
+    src: url('../fonts/webfonts/315807_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/315807_1_0.woff2') format('woff2'), url('../fonts/webfonts/315807_1_0.woff') format('woff'), url('../fonts/webfonts/315807_1_0.ttf') format('truetype');
+}
