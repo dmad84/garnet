@@ -1,0 +1,197 @@
+body {
+    font-family: 'FFMetaWebProMedium', Helvetica;
+    color: $color-black;
+    @extend .t2;
+}
+
+.a1 {
+    color: $heading-color;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+@include bp-large {
+    .a1 {
+        font-size: 40px;
+        margin-bottom: 34px;
+    }
+}
+
+@include bp-medium {
+    .a1 {
+        font-size: 26px;
+        margin-bottom: 28px;
+    }
+}
+
+.a2 {
+    color: $heading-color;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+
+@include bp-medium {
+    .a2 {
+        font-size: 18px;
+        margin-bottom: 21px;
+    }
+}
+
+@include bp-large {
+    .a2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+h4 {
+    margin-top: 25px;
+}
+
+.t1 {
+    color: $color-black;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+@include bp-large {
+    .t1 {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+}
+
+.t2 {
+    color: $color-black;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+@include bp-medium {
+    .t2 {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+}
+
+@include bp-large {
+    .t2 {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+}
+
+p,
+label {
+    @extend .t1;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.t3 {
+    color: $color-light-grey-2;
+    font-size: 17px;
+    margin-bottom: 19px;
+}
+
+@include bp-medium {
+    .t3 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+}
+
+@include bp-large {
+    .t3 {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+}
+
+.t4 {
+    @extend .t4;
+    color: $color-light-grey-3;
+}
+
+.m1 {
+    color: $footer-link-color;
+    font-size: 14px;
+}
+
+@include bp-medium {
+    .m1 {
+        font-size: 12px;
+    }
+}
+
+@include bp-large {
+    .m1 {
+        font-size: 15px;
+    }
+}
+
+.m2 {
+    color: $footer-back-link-color;
+    font-size: 14px;
+}
+
+@include bp-medium {
+    .m2 {
+        font-size: 14px;
+    }
+}
+
+@include bp-large {
+    .m2 {
+        font-size: 15px;
+    }
+}
+
+.w1 {
+    color: $information-text-color;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+@include bp-medium {
+    .w1 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
+
+@include bp-large {
+    .w1 {
+        font-size: 20px;
+        margin-bottom: 23px;
+    }
+}
+
+.w2 {
+    color: $warning-text-color;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+@include bp-medium {
+    .w2 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+}
+
+@include bp-large {
+    .w2 {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+}

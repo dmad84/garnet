@@ -1,0 +1,19 @@
+.footer {
+    color: $footer-text-color;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+@include bp-medium {
+    .footer {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+}
+
+@include bp-large {
+    .footer {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}

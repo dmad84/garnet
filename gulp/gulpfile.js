@@ -8,7 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 var notify = require("gulp-notify");
 
-gulp.task('serve', ['sass', 'fonts'], function() {
+gulp.task('serve', ['sass', 'fonts', 'images'], function() {
 
     browserSync.init({
         server: "..",
@@ -32,6 +32,10 @@ gulp.task('sass', function() {
 gulp.task('fonts', function() {
     return gulp.src(path + "/assets/fonts/**/*")
         .pipe(gulp.dest(path + "/assets/fonts/"));
+});
+gulp.task('images', function() {
+    return gulp.src(path + "/assets/images/*")
+        .pipe(gulp.dest(path + "/assets/images/"));
 });
 
 gulp.task('concat', function() {
