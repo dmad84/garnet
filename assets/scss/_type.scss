@@ -1,7 +1,7 @@
 body {
     font-family: 'FFMetaWebProMedium', Helvetica;
     color: $color-black;
-    @extend .t2;
+    font-size: 14px;
 }
 
 .a1 {
@@ -193,5 +193,25 @@ label {
     .w2 {
         font-size: 21px;
         margin-bottom: 26px;
+    }
+}
+
+.f1 {
+    color: $color-light-grey-1;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+@include bp-medium {
+    .f1 {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+}
+
+@include bp-large {
+    .f1 {
+        font-size: 14px;
+        margin-bottom: 16px;
     }
 }

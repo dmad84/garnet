@@ -1,11 +1,79 @@
 .footer {
+    height: 145px;
+    width: 100%;
+    background-color: $footer-background-color;
+    ul {
+        padding-top: 0px;
+        li {
+            border-right: none;
+            padding: 25px 0px 0px 0px;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    .fcs {
+        background: url(../images/FSCSlogo.png) right top no-repeat;
+        background-size: auto 87px;
+        height: 87px;
+        right: 0;
+    }
+}
+
+@include bp-medium {
+    .footer {
+        height: 90px;
+        ul {
+            padding-top: 11px;
+            li {
+                padding: 0px 10px 0px 5px;
+                display: inline-block;
+                padding-right: 10px;
+                border-right: 1px solid $footer-link-color;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        .fcs {
+            background-size: auto 65px;
+            height: 65px;
+            right: 0;
+        }
+    }
+}
+
+@include bp-large {
+    .footer {
+        height: 119px;
+        ul {
+            padding-top: 18px;
+            li {
+                padding: 0px 10px 0px 5px;
+                display: inline-block;
+                padding-right: 10px;
+                border-right: 1px solid $footer-link-color;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        .fcs {
+            background-size: auto 94px;
+            height: 94px;
+            right: 0;
+        }
+    }
+}
+
+.footer-text {
     color: $footer-text-color;
     font-size: 12px;
     margin-bottom: 14px;
 }
 
 @include bp-medium {
-    .footer {
+    .footer-text {
         font-size: 12px;
         margin-bottom: 14px;
     }
@@ -13,7 +81,30 @@
 
 @include bp-large {
     .footer {
-        font-size: 14px;
-        margin-bottom: 16px;
+        .footer-text {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.copy-rights {
+    width: 100%;
+    height: 55px;
+    padding-top: 25px;
+    background-color: $copy-rights-background-color;
+}
+
+@include bp-medium {
+    .copy-rights {
+        padding-top: 10px;
+        height: 35px;
+    }
+}
+
+@include bp-large {
+    .copy-rights {
+        padding-top: 24px;
+        height: 48px;
     }
 }
