@@ -30,15 +30,11 @@
                 display: inline-block;
                 padding-right: 10px;
                 border-right: 1px solid $footer-link-color;
-                &:last-child {
-                    border-right: none;
-                }
             }
         }
         .fcs {
             background-size: auto 65px;
             height: 65px;
-            right: 0;
         }
     }
 }
@@ -53,15 +49,11 @@
                 display: inline-block;
                 padding-right: 10px;
                 border-right: 1px solid $footer-link-color;
-                &:last-child {
-                    border-right: none;
-                }
             }
         }
         .fcs {
             background-size: auto 94px;
             height: 94px;
-            right: 0;
         }
     }
 }

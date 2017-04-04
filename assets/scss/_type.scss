@@ -125,6 +125,13 @@ label {
 .m1 {
     color: $footer-link-color;
     font-size: 14px;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        border-bottom: 1px solid #F8A44A;
+        color: $footer-link-color;
+    }
 }
 
 @include bp-medium {
