@@ -92,11 +92,6 @@ p {
     margin-bottom: 10px;
 }
 
-label {
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
 .t3 {
     color: $color-light-grey-2;
     font-size: 17px;
@@ -126,10 +121,16 @@ label {
     color: $footer-link-color;
     font-size: 14px;
     text-decoration: none;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:active {
+        outline: none;
         text-decoration: none;
         border-bottom: 1px solid #F8A44A;
+        color: $footer-link-color;
+    }
+    &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $footer-link-color;
         color: $footer-link-color;
     }
 }

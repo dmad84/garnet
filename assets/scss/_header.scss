@@ -35,14 +35,11 @@ header {
         height: 68px;
         margin-bottom: 25px;
         h1 {
-            width: 768px;
+            //width: 768px;
             .logo {
                 top: 60px;
                 left: 2px;
                 width: 150px;
-            }
-            .header-link {
-                margin-top: 30px;
             }
         }
     }
@@ -53,16 +50,16 @@ header {
         height: 100px;
         margin-bottom: 40px;
         h1 {
-            width: 1170px;
+            //width: 1170px;
             .logo {
                 top: 65px;
                 left: -25px;
                 height: 100px;
                 width: 220px;
             }
-            .header-link {
-                margin-top: 60px;
-            }
+        }
+        .header-link {
+            padding-top: 72px;
         }
     }
 }

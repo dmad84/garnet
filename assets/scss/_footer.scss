@@ -30,6 +30,9 @@
                 display: inline-block;
                 padding-right: 10px;
                 border-right: 1px solid $footer-link-color;
+                &:last-of-type {
+                    border-right: none;
+                }
             }
         }
         .fcs {
@@ -49,6 +52,9 @@
                 display: inline-block;
                 padding-right: 10px;
                 border-right: 1px solid $footer-link-color;
+                &:last-child {
+                    border-right: none;
+                }
             }
         }
         .fcs {

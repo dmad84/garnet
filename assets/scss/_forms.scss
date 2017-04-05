@@ -1,0 +1,100 @@
+    label {
+        font-weight: normal;
+        margin-bottom: 6px;
+    }
+    
+    .form-control {
+        border-radius: 0px;
+        height: 40px;
+        &:focus {
+            border-color: $focus-color;
+            border: 3px solid $focus-color;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    
+    .form-group {
+        margin-bottom: 40px;
+        .icon-information-01 {
+            font-size: 30px;
+            color: $color-mid-blue;
+        }
+    }
+    
+    .btn-default {
+        width: 60%;
+    }
+    
+    .cta1,
+    .cta2 {
+        background-color: $color-mid-blue;
+        color: $color-white;
+        [class^="icon-"],
+        [class*=" icon-"] {
+            line-height: 1.2;
+        }
+        border-radius: 0;
+        text-align: left;
+    }
+    
+    @include bp-medium {
+        .btn-default {
+            width: 100%;
+        }
+    }
+    
+    .cta1 {
+        font-size: 17px;
+    }
+    
+    @include bp-medium {
+        .cta1 {
+            font-size: 15px;
+        }
+    }
+    
+    @include bp-large {
+        .cta1 {
+            font-size: 21px;
+        }
+    }
+    
+    .cta2 {
+        font-size: 17px;
+    }
+    
+    @include bp-medium {
+        .cta2 {
+            font-size: 15px;
+        }
+    }
+    
+    @include bp-large {
+        .cta2 {
+            font-size: 21px;
+        }
+    }
+    
+    .cta3 {
+        font-size: 17px;
+        color: $color-dark-blue;
+        &:hover {
+            border-bottom: 1px solid $color-dark-blue;
+        }
+        &:focus {
+            border-bottom: 1px solid $color-orange;
+        }
+    }
+    
+    @include bp-medium {
+        .cta3 {
+            font-size: 15px;
+        }
+    }
+    
+    @include bp-large {
+        .cta3 {
+            font-size: 21px;
+        }
+    }
