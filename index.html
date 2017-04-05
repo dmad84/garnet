@@ -42,18 +42,46 @@
                 <form>
                     <h2 class="a1">Personal details</h2>
                     <p class="t1">T1 Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
                                 <label for="email">Email address:</label>
-                                <p class="help-block w1">Example block-level help text here.</p>
+                                <p class="w1 help-text">Example block-level help text here. Example block-level help text here. Example block-level help text here.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
                                 <input class="form-control" id="email" type="email">
                             </div>
-                            <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
                                 <label for="pwd">Password:</label>
+                                <span class="icon-information-01 information pull-right"></span>
                                 <input class="form-control" id="pwd" type="password">
                             </div>
-                            <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="drop">dropdown:</label>
+                                <span class="icon-information-01 information pull-right"></span>
+                                <select class="form-control" id="drop">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
                                 <label for="pwd">Date field:</label> <span class="icon-information-01 information pull-right"></span>
                                 <div class="row gutter-10">
                                     <div class="col-xs-4">
@@ -67,65 +95,136 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="row active">
+                        <div class="col-xs-12 form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <label for="pwd">Active:</label>
+                                    <span class="icon-information-01 information pull-right"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" id="pwd" type="password">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <p class="w1 help-text">Example block-level help text here. Example block-level help text here. Example block-level help text here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
                                 <label for="pwd">Field with information and button:</label> <span class="icon-information-01 information pull-right"></span>
                                 <div class="row gutter-20">
                                     <div class="col-xs-12 col-sm-6">
-                                        <input class="form-control" id="pwd" type="password">
+                                        <input class="form-control" id="pwd" type="text">
                                     </div>
                                     <div class="col-xs-12 col-sm-6">
                                         <button class="btn btn-default cta2" type="button">Button Cta2<span class="icon-arrowforward-01 information pull-right"></span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="pwd">Field with inactive/disabled button:</label> <span class="icon-information-01 information pull-right"></span>
-                                <div class="row gutter-20">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <button class="btn btn-default cta2" type="button" disabled="disabled">Button Cta2<span class="icon-arrowforward-01 information pull-right"></span></button>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="row warning-form-group">
+                        <div class="col-xs-12 form-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label for="pwd">Active:</label>
+                                    <span class="w2 icon-attention-01 warning pull-right"></span>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="pwd">Field with alternative button:</label> <span class="icon-information-01 information pull-right"></span>
-                                <div class="row gutter-20">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <button class="btn btn-default cta2 alternative" type="button">Button Cta2<span class="icon-arrowforward-01 information pull-right"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Field with information and alt-button:</label> <span class="icon-information-01 information pull-right"></span>
-                                <div class="row gutter-10">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <input class="form-control" id="pwd" type="password">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6">
-                                        <button type="button" class="btn btn-link cta3">Link cta 3 <span class="icon-arrowdot-01"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-3">
-                                    <button type="button" class="btn btn-link cta3" disabled="disabled">Link cta 3 <span class="icon-arrowdot-01"></span></button>
-                                </div>
-                                <a class="btn btn-link cta3" type="submit">Button Cta3 <span class="icon-arrowdot-01"></span></a>
+                            <div class="row">
                                 <div class="col-xs-12 col-sm-6">
-                                    <button type="button" class="btn btn-default cta2">Link cta 3
-                                        <span class="pull-right in-progress"></span>
-                                    </button>
+                                    <input class="form-control" id="pwd" type="password">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <p class="w2 warning-text">Example block-level help text here. Example block-level help text here. Example block-level help text here.</p>
                                 </div>
                             </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="pwd">Field with inactive/disabled button:</label> <span class="icon-information-01 information pull-right"></span>
+                                <button class="btn btn-default cta2" type="button" disabled="disabled">Button Cta2<span class="icon-arrowforward-01 information pull-right"></span></button>
                             </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <button class="btn btn-default cta1" type="button">Submit Cta1<span class="icon-arrowforward-01 information pull-right"></span></button>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Field with alternative button:</label>
+                        <div class="row gutter-20">
+                            <div class="col-xs-12 col-sm-6">
+                                <button class="btn btn-default cta2 alternative" type="button">Button Cta2<span class="icon-arrowforward-01 information pull-right"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="pwd">Field with information and alt-button:</label> <span class="icon-information-01 information pull-right"></span>
+                            <div class="row gutter-10">
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" id="pwd" type="password" />
                                 </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <button type="button" class="btn btn-link cta3">Link cta 3 <span class="icon-arrowdot-01"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-6">
+                            <ul class="list-unstyled t1">
+                                <li>
+                                    Northface
+                                </li>
+                                <li>
+                                    Rose sStreet
+                                </li>
+                                <li>
+                                    Edinburgh
+                                </li>
+                                <li>
+                                    EH11 1EQ
+                                </li>
+                                <li>
+                                    Scotland
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-link cta3" disabled="disabled">Link cta 3 <span class="icon-arrowdot-01"></span></button><a class="btn btn-link cta3" type="submit">Button Cta3 <span class="icon-arrowdot-01"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <button type="button" class="btn btn-default cta2">Link cta 3
+                                    <span class="pull-right in-progress"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <button class="btn btn-default cta1" type="button">Submit Cta1<span class="icon-arrowforward-01 information pull-right"></span></button>
                             </div>
                         </div>
                     </div>

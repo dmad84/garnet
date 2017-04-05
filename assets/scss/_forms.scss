@@ -4,7 +4,7 @@ label {
 }
 
 .form-control {
-    border-radius: 0px;
+    border-radius: 0px !important;
     height: 40px;
     &:focus {
         @extend .button-focus;
@@ -12,10 +12,44 @@ label {
     }
 }
 
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 2px 2px 2px 20px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+}
+
+.active {
+    background-color: $color-light-grey-4;
+}
+
+.warning-form-group {
+    background-color: $color-orange-2;
+}
+
 .form-group {
     margin-bottom: 40px;
     .icon-information-01 {
         font-size: 30px;
         color: $color-mid-blue;
+    }
+    .icon-attention-01 {
+        font-size: 30px;
+    }
+    .w1,
+    .w2 {
+        margin-bottom: 10px;
+    }
+}
+
+@include bp-small {
+    .form-group {
+        .btn {
+            float: right;
+        }
     }
 }
