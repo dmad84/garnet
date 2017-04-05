@@ -125,7 +125,7 @@ p {
     &:active {
         outline: none;
         text-decoration: none;
-        border-bottom: 1px solid #F8A44A;
+        border-bottom: 1px solid $focus-color;
         color: $footer-link-color;
     }
     &:hover {

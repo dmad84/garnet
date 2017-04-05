@@ -1,0 +1,113 @@
+.btn {
+    border: 2px solid transparent;
+    &:active {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.btn-default {
+    width: 60%;
+    padding: 2px 10px;
+}
+
+.cta1,
+.cta2 {
+    background-color: $cta-background-color;
+    color: $cta-color;
+    [class^="icon-"],
+    [class*=" icon-"] {
+        line-height: 1.2;
+    }
+    border-radius: 0;
+    text-align: left;
+    &:focus {
+        @extend .button-focus;
+        background-color: $cta-background-hover-color;
+        color: $cta-color;
+    }
+    &:hover,
+    &:active {
+        background-color: $cta-background-hover-color;
+        color: $cta-color;
+        border: 2px solid transparent;
+    }
+    &:active {
+        &:hover {
+            background-color: $cta-background-hover-color;
+            color: $cta-color;
+            border: 2px solid transparent;
+            outline: none;
+        }
+    }
+}
+
+@include bp-medium {
+    .btn-default {
+        width: 100%;
+    }
+}
+
+.cta1 {
+    font-size: 17px;
+}
+
+@include bp-medium {
+    .cta1 {
+        font-size: 16px;
+    }
+}
+
+@include bp-large {
+    .cta1 {
+        font-size: 25px;
+    }
+}
+
+.cta2 {
+    font-size: 17px;
+}
+
+@include bp-medium {
+    .cta2 {
+        font-size: 15px;
+    }
+}
+
+@include bp-large {
+    .cta2 {
+        font-size: 21px;
+    }
+}
+
+.cta3 {
+    font-size: 17px;
+    padding: 0;
+    color: $color-dark-blue;
+    line-height: 1;
+    &:focus,
+    &:hover:focus,
+    &:active:focus {
+        outline: none;
+        text-decoration: none;
+        border-bottom: 2px solid $focus-color;
+    }
+    &:hover {
+        outline: none;
+        text-decoration: none;
+        border-bottom: 2px solid $color-dark-blue;
+    }
+}
+
+@include bp-medium {
+    .cta3 {
+        font-size: 15px;
+    }
+}
+
+@include bp-large {
+    .cta3 {
+        font-size: 21px;
+    }
+}
