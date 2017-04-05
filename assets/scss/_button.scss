@@ -7,9 +7,21 @@
     }
 }
 
+.button-focus {
+    border: 2px solid $focus-color;
+    outline: none;
+    box-shadow: none;
+}
+
 .btn-default {
     width: 60%;
     padding: 2px 10px;
+}
+
+@include bp-medium {
+    .btn-default {
+        width: 100%;
+    }
 }
 
 .cta1,
@@ -41,11 +53,15 @@
             outline: none;
         }
     }
-}
-
-@include bp-medium {
-    .btn-default {
-        width: 100%;
+    &.disabled,
+    &[disabled],
+    &[disabled]:hover {
+        background-color: $cta-disabled-background-color;
+        color: $cta-disabled-color;
+        border: 2px solid transparent;
+    }
+    &.alternative {
+        background-color: $cta-disabled-background-color;
     }
 }
 
@@ -98,6 +114,16 @@
         text-decoration: none;
         border-bottom: 2px solid $color-dark-blue;
     }
+    &:disabled {
+        border: none;
+        &:focus,
+        &:hover,
+        &:hover:focus,
+        &:active:focus {
+            border: none;
+            color: $color-dark-blue;
+        }
+    }
 }
 
 @include bp-medium {
@@ -110,4 +136,14 @@
     .cta3 {
         font-size: 21px;
     }
+}
+
+.in-progress {
+    //border: 1px solid white;
+    display: block;
+    height: 1.3em;
+    width: 1.3em;
+    //background-size: 20px 20px;
+    color: red;
+    background: url(../images/loading.svg) right center no-repeat;
 }

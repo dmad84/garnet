@@ -1,27 +1,21 @@
-            label {
-                font-weight: normal;
-                margin-bottom: 6px;
-            }
-            
-            .button-focus {
-                border: 2px solid $focus-color;
-                outline: none;
-                box-shadow: none;
-            }
-            
-            .form-control {
-                border-radius: 0px;
-                height: 40px;
-                &:focus {
-                    @extend .button-focus;
-                    border-color: $focus-color;
-                }
-            }
-            
-            .form-group {
-                margin-bottom: 40px;
-                .icon-information-01 {
-                    font-size: 30px;
-                    color: $color-mid-blue;
-                }
-            }
+label {
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    border-radius: 0px;
+    height: 40px;
+    &:focus {
+        @extend .button-focus;
+        border-color: $focus-color;
+    }
+}
+
+.form-group {
+    margin-bottom: 40px;
+    .icon-information-01 {
+        font-size: 30px;
+        color: $color-mid-blue;
+    }
+}
