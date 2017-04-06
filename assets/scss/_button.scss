@@ -14,14 +14,8 @@
 }
 
 .btn-default {
-    width: 60%;
+    //width: 60%;
     padding: 2px 10px;
-}
-
-@include bp-medium {
-    .btn-default {
-        width: 100%;
-    }
 }
 
 .cta1,
@@ -34,17 +28,14 @@
     }
     border-radius: 0;
     text-align: left;
-    &:focus {
+    &:focus,
+    &.alternative:focus {
         @extend .button-focus;
-        background-color: $cta-background-hover-color;
+        background-color: $cta-background-focus-color;
         color: $cta-color;
     }
     &:hover,
-    &:active {
-        background-color: $cta-background-hover-color;
-        color: $cta-color;
-        border: 2px solid transparent;
-    }
+    &.alternative:hover,
     &:active {
         &:hover {
             background-color: $cta-background-hover-color;
@@ -60,29 +51,50 @@
         color: $cta-disabled-color;
         border: 2px solid transparent;
     }
-    &.alternative {
-        background-color: $cta-disabled-background-color;
-    }
 }
 
 .cta1 {
     font-size: 17px;
+    width: 40%;
+    position: relative;
+    min-height: 150px;
+    span {
+        padding: 20px 10px;
+        white-space: normal;
+    }
+    span.icon-arrowforward-01 {
+        font-size: 50px;
+        padding: 0;
+    }
+    &.alternative {
+        background-color: $cta1-alternative-background-color;
+        color: $cta1-alternative-color;
+    }
 }
 
 @include bp-medium {
     .cta1 {
         font-size: 16px;
+        width: 77%;
     }
 }
 
 @include bp-large {
     .cta1 {
+        min-height: 250px;
         font-size: 25px;
+        span.icon-arrowforward-01 {
+            font-size: 100px;
+        }
     }
 }
 
 .cta2 {
     font-size: 17px;
+    &.alternative {
+        background-color: $cta2-alternative-background-color;
+        color: $cta-color;
+    }
 }
 
 @include bp-medium {

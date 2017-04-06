@@ -48,7 +48,7 @@ select.form-control {
 
 @include bp-small {
     .form-group {
-        .btn {
+        .btn.cta2 {
             float: right;
         }
     }

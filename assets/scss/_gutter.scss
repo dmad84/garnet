@@ -39,3 +39,22 @@
         margin-top: 10px;
     }
 }
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
