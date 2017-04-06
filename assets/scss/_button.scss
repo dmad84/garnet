@@ -139,11 +139,9 @@
 }
 
 .in-progress {
-    //border: 1px solid white;
     display: block;
     height: 1.3em;
     width: 1.3em;
-    //background-size: 20px 20px;
     color: red;
     background: url(../images/loading.svg) right center no-repeat;
 }

@@ -98,6 +98,18 @@ p {
     margin-bottom: 19px;
 }
 
+a.t3 {
+    text-decoration: none;
+    &:focus {
+        border-bottom: 1px solid $focus-color;
+    }
+    &:hover,
+    :active {
+        border-bottom: 1px solid $color-light-grey-2;
+        color: $color-light-grey-2;
+    }
+}
+
 @include bp-medium {
     .t3 {
         font-size: 15px;
