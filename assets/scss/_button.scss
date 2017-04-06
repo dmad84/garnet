@@ -91,6 +91,7 @@
 
 .cta2 {
     font-size: 17px;
+    width: 60%;
     &.alternative {
         background-color: $cta2-alternative-background-color;
         color: $cta-color;
@@ -100,6 +101,7 @@
 @include bp-medium {
     .cta2 {
         font-size: 15px;
+        width: 100%;
     }
 }
 

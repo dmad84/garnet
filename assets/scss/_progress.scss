@@ -1,0 +1,119 @@
+    $complete: $color-dark-blue;
+    $active: $color-dark-blue;
+    $mute: $color-white;
+    .progress-tracker {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        color: darken($mute, 33%);
+        > li {
+            position: relative;
+            display: table-cell;
+            span {
+                //border: 1px solid red;
+                //
+                display: block;
+                text-indent: 45%;
+                //width: 100%;
+            }
+            &:before {
+                content: '.';
+                display: block;
+                margin: 0 auto;
+                background: $mute;
+                border: 1px solid $color-dark-blue;
+                width: 3em;
+                height: 3em;
+                text-align: center; //IE8 doesn't inherit this style
+                margin-bottom: 0.25em;
+                line-height: 3em;
+                border-radius: 100%;
+                position: relative;
+                z-index: 1000;
+                color: $mute;
+                font-size: 0.8em;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                background: $color-dark-blue;
+                width: 100%;
+                height: 0.5em;
+                top: 1em;
+                left: 50%;
+                margin-left: 1.5em\9;
+                z-index: -1;
+            }
+            &:last-child:after {
+                display: none;
+            }
+            &.is-complete {
+                color: $complete;
+                &:before,
+                &:after {
+                    color: #FFF;
+                    background: $complete;
+                }
+                &:before {
+                    content: '\e911';
+                    font-family: 'VTB-Icons';
+                }
+            }
+            &.is-active {
+                color: $active;
+                &:before {
+                    color: $active;
+                    background: $active;
+                }
+            }
+        }
+    }
+    
+    @include bp-small {
+        .progress-tracker {
+            > li {
+                span {
+                    //border: 1px solid red;
+                    //
+                    display: block;
+                    text-indent: 0%;
+                    //width: 100%;
+                }
+            }
+        }
+    }
+    /**
+   * Needed for IE8
+   */
+    
+    .progress-tracker__last:after {
+        display: none!important;
+    }
+    /**
+   * Size Extensions
+   */
+    
+    .progress-tracker--medium {
+        font-size: 1.5em;
+    }
+    
+    .progress-tracker--large {
+        font-size: 2em;
+    }
+    /**
+ * Some Generic Stylings
+ */
+    
+    *,
+    *:after,
+    *:before {
+        box-sizing: border-box;
+    }
+    
+    .progress-tracker {
+        margin-bottom: 3em;
+    }
