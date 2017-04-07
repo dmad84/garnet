@@ -22,6 +22,7 @@
 .checkbox label,
 .radio label {
     position: relative;
+    margin-left: 40px;
 }
 
 .checkbox input[type=checkbox]:focus + label:before,
@@ -38,6 +39,7 @@
     border: 1px solid #595959;
     display: inline-block;
     vertical-align: middle;
+    margin-left: -40px;
     width: 27px;
     height: 27px;
     padding: 2px;
