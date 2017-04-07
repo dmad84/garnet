@@ -1,0 +1,38 @@
+    .custom-styled {
+        list-style: none;
+        padding-left: 1.3em;
+        li {
+            margin-bottom: 14px;
+            &:before {
+                font-family: 'VTB-Icons';
+                display: inline-block;
+                margin-left: -1.3em;
+                /* same as padding-left set on li */
+                width: 1.3em;
+                font-size: 1.3em;
+                color: $color-dark-blue;
+            }
+        }
+    }
+    
+    .tick-styled {
+        @extend .custom-styled;
+        li {
+            &:before {
+                content: '\e911';
+            }
+        }
+    }
+    
+    .cross-styled {
+        @extend .custom-styled;
+        li {
+            &:before {
+                content: '\e909';
+            }
+        }
+    }
+    
+    ol {
+        padding-left: 20px;
+    }

@@ -159,3 +159,30 @@
     color: red;
     background: url(../images/loading.svg) right center no-repeat;
 }
+
+.cta-styled-box {
+    color: $cta-box-color;
+    font-size: 17px;
+    width: 40%;
+    min-height: 150px;
+    background-color: $cta-box-background-color;
+    padding: 20px 10px;
+    white-space: normal;
+}
+
+@include bp-medium {
+    .cta-styled-box {
+        font-size: 16px;
+        width: 77%;
+    }
+}
+
+@include bp-large {
+    .cta-styled-box {
+        min-height: 250px;
+        font-size: 25px;
+        span.icon-arrowforward-01 {
+            font-size: 100px;
+        }
+    }
+}

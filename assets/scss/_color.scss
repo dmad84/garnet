@@ -37,7 +37,13 @@ $cta2-alternative-background-color: $color-light-grey-1;
 $cta1-alternative-color: $color-dark-blue;
 $cta-alternative-background-color: $color-mid-blue;
 $cta-link-disabled-color: $color-light-blue-2;
+$cta-box-background-color: $color-light-blue-1;
+$cta-box-color: $color-dark-blue;
 // styles
 .background--grey {
     background: $color-light-grey-5
+}
+
+.dark-blue {
+    color: $color-dark-blue
 }
