@@ -1,0 +1,30 @@
+.border {
+    border: 1px dashed $color-dark-blue;
+}
+
+//Border Sides
+.border--bottom {
+    border-bottom: 1px dashed $color-dark-blue;
+}
+
+.border--left {
+    border-left: 1px dashed $color-dark-blue;
+}
+
+.border--right {
+    border-right: 1px dashed $color-dark-blue;
+}
+
+.border--top {
+    border-top: 1px dashed $color-dark-blue;
+}
+
+.border--ends {
+    border-bottom: 1px dashed $color-dark-blue;
+    border-top: 1px dashed $color-dark-blue;
+}
+
+.border--sides {
+    border-left: 1px dashed $color-dark-blue;
+    border-right: 1px dashed $color-dark-blue;
+}

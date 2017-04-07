@@ -1,15 +1,16 @@
     .custom-styled {
         list-style: none;
-        padding-left: 1.3em;
+        padding-left: 5px;
         li {
             margin-bottom: 14px;
+            margin-left: 1.3em;
             &:before {
                 font-family: 'VTB-Icons';
                 display: inline-block;
                 margin-left: -1.3em;
                 /* same as padding-left set on li */
                 width: 1.3em;
-                font-size: 1.3em;
+                font-size: 1em;
                 color: $color-dark-blue;
             }
         }
