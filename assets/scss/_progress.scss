@@ -15,6 +15,7 @@
             span {
                 //border: 1px solid red;
                 //
+                text-align: left;
                 display: block;
                 text-indent: 45%;
                 //width: 100%;
@@ -77,11 +78,9 @@
         .progress-tracker {
             > li {
                 span {
-                    //border: 1px solid red;
-                    //
                     display: block;
                     text-indent: 0%;
-                    //width: 100%;
+                    text-align: center;
                 }
             }
         }
