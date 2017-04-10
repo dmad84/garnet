@@ -1,6 +1,7 @@
 label {
     font-weight: normal;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    //line-height: 1.2;
 }
 
 .form-control {
@@ -34,10 +35,12 @@ select.form-control {
 
 .active {
     background-color: $color-light-grey-4;
+    padding-top: 10px;
 }
 
 .warning-form-group {
     background-color: $color-orange-2;
+    padding-top: 10px;
 }
 
 .form-group {

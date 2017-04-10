@@ -221,6 +221,7 @@
 .information {
     color: $color-mid-blue;
     text-decoration: none;
+    line-height: 1;
     &:after {
         content: '\e90c';
         font-family: 'VTB-icons';

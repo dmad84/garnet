@@ -49,9 +49,10 @@
     margin-bottom: 20px;
 }
 
-.row .row {
-    //margin-top: 10px;
-    margin-bottom: 0;
+.row.form-group {
+    .row {
+        margin-bottom: 0px;
+    }
 }
 
 .no-gutter > [class*='col-'] {
