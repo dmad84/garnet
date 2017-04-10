@@ -175,9 +175,9 @@
         background: -webkit-linear-gradient(top, $color-light-blue-1, $color-light-blue-1 60%, $color-mid-blue-2 40%, $color-mid-blue-2);
         .special-text {
             position: absolute;
-            font-size: 2em;
-            top: 38%;
-            left: 10%;
+            font-size: 2.5em;
+            top: 34%;
+            left: 8%;
         }
         .bottom-left {
             left: 10%;
@@ -193,7 +193,7 @@
     &.special {
         .special-text {
             position: absolute;
-            font-size: 2em;
+            font-size: 3em;
             top: 21%;
             left: 10%;
         }
@@ -215,5 +215,23 @@
                 left: 10%;
             }
         }
+    }
+}
+
+.information {
+    color: $color-mid-blue;
+    text-decoration: none;
+    &:after {
+        content: '\e90c';
+        font-family: 'VTB-icons';
+        font-size: 30px;
+    }
+    &:hover {
+        color: $color-dark-blue;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 1px solid $focus-color;
+        text-decoration: none;
     }
 }

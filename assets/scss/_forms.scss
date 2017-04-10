@@ -17,10 +17,15 @@ label {
     }
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 select.form-control {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    -ms-appearance: none;
     padding: 2px 2px 2px 20px;
     background-repeat: no-repeat;
     background-position: 99% 40%;

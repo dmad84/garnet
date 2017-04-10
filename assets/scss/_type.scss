@@ -66,20 +66,20 @@ h4 {
 .t2 {
     color: $color-black;
     font-size: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 @include bp-medium {
     .t2 {
         font-size: 12px;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
     }
 }
 
 @include bp-large {
     .t2 {
         font-size: 18px;
-        margin-bottom: 22px;
+        margin-bottom: 12px;
     }
 }
 
