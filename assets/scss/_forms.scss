@@ -10,6 +10,7 @@ label {
     border-right: 1px solid $color-light-grey-4;
     border-bottom: 1px solid $color-light-grey-4;
     height: 40px;
+    box-shadow: none;
     &:focus {
         @extend .button-focus;
         border-color: $focus-color;

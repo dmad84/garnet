@@ -28,7 +28,8 @@
 .checkbox input[type=checkbox]:focus + label:before,
 .radio input[type=radio]:focus + label:before {
     outline: none;
-    border: 1px solid $focus-color;
+    border: none;
+    box-shadow: inset 0 0 0 2px $focus-color;
     /* focus style */
 }
 
