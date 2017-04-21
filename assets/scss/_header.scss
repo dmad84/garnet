@@ -6,7 +6,7 @@ header {
     width: 100%;
     height: 68px;
     background: $header-background-color;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     h1 {
         float: none;
         display: block;
@@ -33,7 +33,7 @@ header {
 @include bp-medium {
     header {
         height: 68px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         h1 {
             .logo {
                 top: 60px;
@@ -47,7 +47,7 @@ header {
 @include bp-large {
     header {
         height: 100px;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
         h1 {
             .logo {
                 top: 65px;
@@ -60,4 +60,8 @@ header {
             padding-top: 72px;
         }
     }
+}
+
+.page-header {
+    margin: 10px 0 20px
 }

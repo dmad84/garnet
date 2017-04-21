@@ -1,7 +1,14 @@
 body {
-    font-family: 'FFMetaWebProMedium', Helvetica;
+    font-family: 'FFMetaWebProNormal', Helvetica;
     color: $color-black;
     font-size: 14px;
+}
+
+.t1,
+.t2,
+.w1,
+.m1 {
+    font-family: 'FFMetaWebProMedium', Helvetica;
 }
 
 .a1 {
@@ -11,17 +18,17 @@ body {
     margin-bottom: 30px;
 }
 
-@include bp-large {
-    .a1 {
-        font-size: 40px;
-        margin-bottom: 34px;
-    }
-}
-
 @include bp-medium {
     .a1 {
         font-size: 26px;
         margin-bottom: 28px;
+    }
+}
+
+@include bp-large {
+    .a1 {
+        font-size: 40px;
+        margin-bottom: 34px;
     }
 }
 
@@ -54,6 +61,7 @@ h4 {
     color: $color-black;
     font-size: 15px;
     margin-bottom: 18px;
+    line-height: 26px;
 }
 
 @include bp-large {
@@ -67,6 +75,7 @@ h4 {
     color: $color-black;
     font-size: 14px;
     margin-bottom: 8px;
+    line-height: 26px;
 }
 
 @include bp-medium {
@@ -180,6 +189,7 @@ a.t3 {
     color: $information-text-color;
     font-size: 15px;
     margin-bottom: 18px;
+    line-height: 26px;
 }
 
 @include bp-medium {
