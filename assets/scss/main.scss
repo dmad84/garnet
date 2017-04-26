@@ -18,3 +18,16 @@
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    background-color: #f5f5f5;
+}

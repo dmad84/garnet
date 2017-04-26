@@ -18,9 +18,21 @@
         height: 87px;
         right: 0;
     }
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 190px;
 }
 
 @include bp-medium {
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 125px;
+    }
     .footer {
         height: 90px;
         ul {
@@ -43,6 +55,10 @@
 }
 
 @include bp-large {
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 167px;
+    }
     .footer {
         height: 119px;
         ul {
