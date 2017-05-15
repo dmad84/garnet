@@ -12,7 +12,9 @@
 .checkbox input[type=checkbox],
 .checkbox label,
 .radio input[type=radio],
-.radio label {
+.radio label,
+.checkbox .t1,
+.radio .t1 {
     display: inline-block;
     vertical-align: middle;
     margin: 5px 5px 5px 0;

@@ -96,6 +96,9 @@
         background-color: $cta2-alternative-background-color;
         color: $cta-color;
     }
+    span {
+        vertical-align: middle;
+    }
 }
 
 @include bp-medium {
