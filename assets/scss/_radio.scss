@@ -63,6 +63,21 @@
     border: 1px solid $color-green;
 }
 
+.radio input[type=radio]:checked:disabled + label:before,
+.checkbox input[type=checkbox]:checked:disabled + label:before {
+    content: "\e911";
+    font-family: 'VTB-Icons';
+    font-size: 15px;
+    color: white;
+    background: $color-light-grey-2;
+    border: 1px solid $color-light-grey-2;
+}
+
+.radio input[type=radio]:disabled + label,
+.checkbox input[type=checkbox]:disabled + label {
+    color: $color-light-grey-2;
+}
+
 .checkbox label,
 .radio label {
     padding-left: 0;

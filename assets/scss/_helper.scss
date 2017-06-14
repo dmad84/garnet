@@ -46,6 +46,22 @@
     padding: 16px 0;
 }
 
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.row.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.margin-bottom-large {
+    margin-bottom: 40px;
+}
+
+.row.margin-bottom-large {
+    margin-bottom: 40px;
+}
+
 @include bp-medium {
     .push-bottom {
         padding-bottom: 20px;

@@ -56,22 +56,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <label for="pwd">Password:</label>
-                                <a class="information pull-right" href="#" title="info"></a>
-                                <input class="form-control" id="pwd" type="password">
-                            </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="pwd">Password:</label>
+                            <a class="information pull-right" href="#" title="info"></a>
+                            <input class="form-control" id="pwd" type="password">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <label for="pwd">text:</label>
-                                <a class="information pull-right" href="#" title="info"></a>
-                                <input class="form-control" id="pwd" type="text">
-                            </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="pwd">text:</label>
+                            <a class="information pull-right" href="#" title="info"></a>
+                            <input class="form-control" id="pwd" type="text">
                         </div>
                     </div>
                     <div class="form-group">
@@ -95,45 +91,72 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <label for="drop">dropdown:</label>
-                                <a class="information pull-right" href="#" title="info"></a>
-                                <select class="form-control" id="drop">
-                                    <option>
-                                        1
-                                    </option>
-                                    <option>
-                                        2
-                                    </option>
-                                    <option>
-                                        3
-                                    </option>
-                                    <option>
-                                        4
-                                    </option>
-                                    <option>
-                                        5
-                                    </option>
-                                </select>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="drop">dropdown:</label>
+                            <a class="information pull-right" href="#" title="info"></a>
+                            <select class="form-control" id="drop">
+                                <option>
+                                    1
+                                </option>
+                                <option>
+                                    2
+                                </option>
+                                <option>
+                                    3
+                                </option>
+                                <option>
+                                    4
+                                </option>
+                                <option>
+                                    5
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="pwd">Date field:</label>
+                            <a class="information pull-right" href="#" title="info"></a>
+                            <div class="row gutter-10">
+                                <div class="col-xs-4">
+                                    <input class="form-control" id="pwd" placeholder="DD" type="text">
+                                </div>
+                                <div class="col-xs-4">
+                                    <input class="form-control" id="pwd" placeholder="MM" type="text">
+                                </div>
+                                <div class="col-xs-4">
+                                    <input class="form-control" id="pwd" placeholder="YYYY" type="text">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <label for="pwd">Date field:</label>
-                                <a class="information pull-right" href="#" title="info"></a>
-                                <div class="row gutter-10">
-                                    <div class="col-xs-4">
-                                        <input class="form-control" id="pwd" placeholder="DD" type="text">
+                    <div class="form-group row warning-form-group" id="placeOfBirth_form-group">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <label for="placeOfBirth">City of birth</label>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span id="placeOfBirthIcon" class="w2 icon-attention-01 warning pull-right" style="display: block;"></span>
+                                        </div>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <input class="form-control" id="pwd" placeholder="MM" type="text">
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <input class="form-control" id="pwd" placeholder="YYYY" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 ">
+                                    <p class="w1 help-text">Please enter your city of birth as shown on your birth certificate</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 gfield_error">
+                                    <input type="text" name="placeOfBirth" class="form-control" maxlength="24" id="placeOfBirth" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div id="placeOfBirthErrorMessage">
+                                        <div class="w2 warning-text" id="empty_field">Please complete all fields before proceeding.</div>
                                     </div>
                                 </div>
                             </div>
@@ -157,18 +180,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <label for="pwd">Field with information and button:</label>
-                                <a class="information pull-right" href="#" title="info"></a>
-                                <div class="row gutter-20">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <input class="form-control" id="pwd" type="text">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6">
-                                        <button class="btn btn-default cta2" type="button"><span class="icon-arrowforward-01 pull-right"></span>Button Cta2</button>
-                                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="pwd">Field with information and button:</label>
+                            <a class="information pull-right" href="#" title="info"></a>
+                            <div class="row gutter-20">
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" id="pwd" type="text">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <button class="btn btn-default cta2" type="button"><span class="icon-arrowforward-01 pull-right"></span>Button Cta2</button>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +197,7 @@
                     <div class="row warning-form-group form-group">
                         <div class="col-xs-12">
                             <span class="icon-attention-01 warning pull-right"></span>
-                            <label for="pwd">Active:</label>
+                            <label for="pwd">Warning:</label>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <input class="form-control" id="pwd" type="text">
@@ -240,6 +261,17 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
+                            <label>Disabled</label>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input id="dis" type="checkbox" name="disabled" checked="true" disabled="disabled">
+                        <label for="dis">Checkbox</label>
+                        <input id="dis2" type="checkbox" name="disabled" disabled="disabled">
+                        <label for="dis2">Checkbox</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
                             <label>Tick box questions ?</label>
                         </div>
                     </div>
@@ -253,7 +285,8 @@
                         <input id="rad" type="radio" name="radio">
                         <label for="rad">radio</label>
                         <input id="radio" type="radio" name="radio">
-                        <label for="radio">radio</label> <span class="t1">extra inline text</span>
+                        <label for="radio">radio</label>
+                        <span class="t1">extra inline text</span>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -302,7 +335,7 @@
                         <h2 class="a1">Personal Details</h2>
                     </div>
                     <div class="col-xs-2 col-sm-4">
-                        <p class="pull-right"><span class="t3 icon-edit-01"></span> <a class="t3 hidden-xs" href="">Edit details</a></p>
+                        <p class="pull-right edit"><span class="t3 icon-edit-01"></span> <a class="t3 hidden-xs" href="">Edit details</a></p>
                     </div>
                 </div>
                 <div class="row">
@@ -395,7 +428,7 @@
             <div class="col-xs-12 col-sm-8">
                 <p class="t1">Please have the following details in hand before applying. Please have the following details in hand before applying. Please have the following details in hand before applying. Please have the following details in hand before applyings</p>
                 <p><a class="btn btn-link cta3" type="submit">View Terms and conditions <span class="icon-arrowdot-01"></span></a></p>
-                <div class="col-xs-12 warning-form-group">
+                <div class="col-xs-12 form-group warning-form-group">
                     <span class="icon-attention-01 warning pull-right"></span>
                     <div class="checkbox">
                         <input id="terms" name="optionsRadios" type="checkbox" value="option1">
@@ -420,6 +453,55 @@
                     <li class="t2">No change to interest rate during the term</li>
                 </ol>
                 <p class="t1">You will receive an email containing all the following information</p>
+            </div>
+        </div>
+        <div class="row border--bottom push-ends">
+            <div class="col-xs-12 col-sm-4">
+                <div class="cta-styled-box">Eligibility </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-12 warning-form-group">
+                    <span class="icon-attention-01 warning pull-right"></span>
+                    <p class="t1">You must meet the following criteria to be eligible for this savings account:*</p>
+                    <div class="radio inline">
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="yes">
+                        <label for="optionsRadios1">Yes</label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="no">
+                        <label for="optionsRadios2">No </label>
+                        <span class="t1">I am 18 years old or over hkgfsg jkfg jkfdsg kdfg fdjkghfdg kfdgh fdskgh fdsgh dfsgkh</span>
+                    </div>
+                    <div class="radio inline">
+                        <input type="radio" name="optionsRadios1" id="optionsRadios3" value="yes">
+                        <label for="optionsRadios3">Yes</label>
+                        <input type="radio" name="optionsRadios1" id="optionsRadios4" value="no">
+                        <label for="optionsRadios4">No</label>
+                        <label>I am not a US citizen</label>
+                    </div>
+                    <div class="radio inline ">
+                        <input type="radio" name="optionsRadios2" id="optionsRadios5" value="yes">
+                        <label for="optionsRadios5">Yes</label>
+                        <input type="radio" name="optionsRadios2" id="optionsRadios6" value="no">
+                        <label for="optionsRadios6">No</label>
+                        <span class="t1">I am a resident of the UK and I am only subject to UK tax</span>
+                    </div>
+                    <div class="radio inline">
+                        <input type="radio" name="optionsRadios3" id="optionsRadios7" value="yes">
+                        <label for="optionsRadios7">Yes</label>
+                        <input type="radio" name="optionsRadios3" id="optionsRadios8" value="no">
+                        <label for="optionsRadios8">No</label>
+                        <span class="t1">I have a UK current account in my name. My account is able to send and accept BACS and Faster Payments.</span>
+                    </div>
+                    <p class="w2" id="errormessage" style="display: none;">Sorry, you must meet this criteria to apply for a savings account.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-12 col-sm-4 pull-right">
+                <button class="btn btn-default cta1 pull-right" type="submit" id="submit_applicationForm" disabled="disabled">
+                    <span class="top-left">
+                    Continue securely
+                </span><span class="bottom-right icon-arrowforward-01"></span>
+                </button>
             </div>
         </div>
     </div>

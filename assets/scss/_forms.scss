@@ -35,18 +35,26 @@ select.form-control {
 
 .active {
     background-color: $color-light-grey-4;
+}
+
+.edit {
     padding-top: 10px;
-    padding-bottom: 20px;
 }
 
 .warning-form-group {
     background-color: $color-orange-2;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    .warning {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
 }
 
 .form-group {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //padding: 10px 0;
     .icon-information-01 {
         font-size: 30px;
         color: $color-mid-blue;
