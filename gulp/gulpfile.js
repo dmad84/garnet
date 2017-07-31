@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 var notify = require("gulp-notify");
+var zip = require('gulp-zip');
 
 gulp.task('serve', ['sass', 'fonts', 'images'], function() {
 
@@ -36,6 +37,19 @@ gulp.task('fonts', function() {
 gulp.task('images', function() {
     return gulp.src(path + "/assets/images/*")
         .pipe(gulp.dest(path + "/assets/images/"));
+});
+gulp.task('assets', function() {
+    return gulp.src(path + "/assets/**/*")
+        .pipe(gulp.dest('dist/assets'))
+});
+gulp.task('index', function() {
+    return gulp.src(path + "/*.html")
+        .pipe(gulp.dest('dist'))
+});
+gulp.task('zip', ['assets', 'index'], function() {
+    return gulp.src('dist/**/*')
+        .pipe(zip('garnet-dist.zip'))
+        .pipe(gulp.dest(path + '/'));
 });
 
 gulp.task('concat', function() {
