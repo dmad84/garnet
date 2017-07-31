@@ -7,11 +7,10 @@ header {
     height: 68px;
     background: $header-background-color;
     margin-bottom: 50px;
-    h1 {
+    .logoHeader {
         float: none;
         display: block;
-        margin: 0 auto;
-        //margin-bottom: 300px;
+        margin: 0 auto; //margin-bottom: 300px;
         position: relative;
         .logo {
             position: absolute;
@@ -34,7 +33,7 @@ header {
     header {
         height: 68px;
         margin-bottom: 50px;
-        h1 {
+        .logoHeader {
             .logo {
                 top: 60px;
                 left: 2px;
@@ -48,7 +47,7 @@ header {
     header {
         height: 100px;
         margin-bottom: 70px;
-        h1 {
+        .logoHeader {
             .logo {
                 top: 65px;
                 left: -25px;
