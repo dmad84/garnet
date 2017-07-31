@@ -1,5 +1,6 @@
 .btn {
     border: 2px solid transparent;
+    white-space: normal;
     &:active {
         &:focus {
             outline: none;
@@ -14,7 +15,6 @@
 }
 
 .btn-default {
-    //width: 60%;
     padding: 2px 10px;
 }
 
