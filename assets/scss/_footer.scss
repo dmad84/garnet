@@ -14,9 +14,10 @@
     }
     .fcs {
         background: url(../images/FSCSlogo.png) right top no-repeat;
-        background-size: auto 87px;
+        width: 87px;
+        float: right;
+        background-size: 87px 87px;
         height: 87px;
-        right: 0;
     }
     .row {
         margin-bottom: 0;
@@ -48,8 +49,9 @@ body {
             }
         }
         .fcs {
-            background-size: auto 65px;
+            background-size: 65px 65px;
             height: 65px;
+            width: 65px;
         }
     }
 }
@@ -74,8 +76,9 @@ body {
             }
         }
         .fcs {
-            background-size: auto 94px;
+            background-size: 94px 94px;
             height: 94px;
+            width:94px;
         }
     }
 }
