@@ -91,10 +91,13 @@
 
 .cta2 {
     font-size: 17px;
-    width: 60%;
+    width: 100%;
     &.alternative {
         background-color: $cta2-alternative-background-color;
         color: $cta-color;
+    }
+    .two-third {
+        width: 100%;
     }
     span {
         vertical-align: middle;
@@ -104,7 +107,9 @@
 @include bp-medium {
     .cta2 {
         font-size: 15px;
-        width: 100%;
+        &.two-third {
+            width: 60%;
+        }
     }
 }
 
