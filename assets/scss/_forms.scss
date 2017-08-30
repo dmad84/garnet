@@ -54,6 +54,9 @@ legend {
 }
 
 .form-group {
+    input {
+        font-size: 22px;
+    }
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px; //padding: 10px 0;
@@ -75,11 +78,5 @@ legend {
         .btn.cta2 {
             float: right;
         }
-    }
-}
-
-@include bp-medium {
-    .form-group {
-        margin-bottom: 30px;
     }
 }

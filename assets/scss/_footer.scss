@@ -1,5 +1,7 @@
 .footer {
-    height: 145px;
+    .footer-links {
+        height: 145px;
+    }
     width: 100%;
     background-color: $footer-background-color;
     ul {
@@ -35,7 +37,10 @@ body {
         margin-bottom: 125px;
     }
     .footer {
-        height: 90px;
+        .footer-links {
+            height: 90px;
+        }
+
         ul {
             padding-top: 11px;
             li {
@@ -62,7 +67,10 @@ body {
         margin-bottom: 167px;
     }
     .footer {
-        height: 119px;
+        .footer-links {
+            height: 119px;
+        }
+
         ul {
             padding-top: 18px;
             li {
@@ -78,7 +86,7 @@ body {
         .fcs {
             background-size: 94px 94px;
             height: 94px;
-            width:94px;
+            width: 94px;
         }
     }
 }
@@ -108,7 +116,7 @@ body {
 .copy-rights {
     width: 100%;
     height: 55px;
-    padding-top: 25px;
+    padding-top: 20px;
     background-color: $copy-rights-background-color;
 }
 
@@ -121,7 +129,7 @@ body {
 
 @include bp-large {
     .copy-rights {
-        padding-top: 24px;
+        padding-top: 18px;
         height: 48px;
     }
 }

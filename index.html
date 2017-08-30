@@ -22,6 +22,7 @@
         </div>
     </header>
     <div class="container">
+        <a class="returnLink" href="javascript:history.back()" title="Back to previous page">&lt; back to previous</a>
         <div class="page-header">
             <h2 class="a1">A1 - Bootstrap grid examples</h2>
             <p class="t1">T1 Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
@@ -76,13 +77,15 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <label class="sr-only" for="field2">Address line: 2</label>
+                                <label for="field2">Address line: 2</label>
+                                <a class="information pull-right" href="#" title="info"></a>
                                 <input class="form-control" id="field2" type="text">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <label class="sr-only" for="field3">Address line: 3</label>
+                                <label for="field3">Address line: 3</label>
+                                <a class="information pull-right" href="#" title="info"></a>
                                 <input class="form-control" id="field3" type="text">
                             </div>
                         </div>
@@ -389,7 +392,7 @@
             <h2 class="col-xs-12 a1">3 year fixed rate account</h2>
             <div class="col-xs-12 col-sm-4">
                 <div class="cta-styled-box special">
-                    <span class="special-text">2.5%</span> <span class="bottom-left">AER*</span>
+                    <span class="special-text">2.5<span class="percentage">%</span></span> <span class="bottom-left">AER*</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-8">
@@ -541,7 +544,7 @@
     </div>
     <!-- /container -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-links">
             <div class="row">
                 <div class="col-xs-8 col-md-10">
                     <ul class="list-unstyled">

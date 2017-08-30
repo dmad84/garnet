@@ -14,7 +14,6 @@ body {
 .a1 {
     color: $heading-color;
     font-size: 28px;
-    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -113,7 +112,7 @@ a.t3 {
         border-bottom: 1px solid $focus-color;
     }
     &:hover,
-    :active {
+     :active {
         border-bottom: 1px solid $color-light-grey-2;
         color: $color-light-grey-2;
     }
@@ -245,6 +244,24 @@ a.t3 {
         margin-bottom: 16px;
     }
 }
+
 a {
     cursor: pointer;
+}
+
+.returnLink {
+    @extend .m2;
+    padding: 25px 0 8px 0;
+}
+
+@include bp-medium {
+    .returnLink {
+        padding: 25px 0 12px 0;
+    }
+}
+
+@include bp-large {
+    .returnLink {
+        padding: 32px 0 12px 0;
+    }
 }
