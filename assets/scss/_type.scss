@@ -14,20 +14,19 @@ body {
 .a1 {
     color: $heading-color;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 @include bp-medium {
     .a1 {
         font-size: 26px;
-        margin-bottom: 28px;
     }
 }
 
 @include bp-large {
     .a1 {
         font-size: 40px;
-        margin-bottom: 34px;
+        margin-bottom: 10px;
     }
 }
 
@@ -92,7 +91,8 @@ h4 {
 }
 
 p,
-label {
+label,
+legend {
     @extend .t1;
 }
 
