@@ -9,7 +9,7 @@
         table-layout: fixed;
         width: 100%;
         color: $color-light-grey-2;
-        > li {
+        >li {
             position: relative;
             display: table-cell;
             span {
@@ -17,6 +17,7 @@
                 display: block;
                 text-indent: 45%;
             }
+
             &:before {
                 content: '\e911';
                 font-family: 'VTB-Icons';
@@ -70,10 +71,10 @@
             }
         }
     }
-    
+
     @include bp-small {
         .progress-tracker {
-            > li {
+            >li {
                 span {
                     display: block;
                     text-indent: 0%;
@@ -85,31 +86,31 @@
     /**
    * Needed for IE8
    */
-    
+
     .progress-tracker__last:after {
         display: none!important;
     }
     /**
    * Size Extensions
    */
-    
+
     .progress-tracker--medium {
         font-size: 1.5em;
     }
-    
+
     .progress-tracker--large {
         font-size: 2em;
     }
     /**
  * Some Generic Stylings
  */
-    
+
     *,
     *:after,
     *:before {
         box-sizing: border-box;
     }
-    
+
     .progress-tracker {
         margin-bottom: 3em;
     }

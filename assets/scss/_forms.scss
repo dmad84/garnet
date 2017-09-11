@@ -26,9 +26,9 @@ select.form-control {
     -moz-appearance: none;
     appearance: none;
     -ms-appearance: none;
-    padding: 2px 2px 2px 20px;
+    padding: 2px 2px 2px 12px;
     background-repeat: no-repeat;
-    background-position: 99% 40%;
+    background-position: 99% 30%;
     background-image: url("../images/arrowdown-01.svg");
 }
 
@@ -54,7 +54,8 @@ legend {
 }
 
 .form-group {
-    input {
+    input,
+    select {
         font-size: 22px;
     }
     margin-bottom: 10px;
