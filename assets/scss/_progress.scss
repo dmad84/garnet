@@ -1,116 +1,138 @@
-    $complete: $color-dark-blue;
-    $active: $color-dark-blue;
-    $mute: $color-white;
-    .progress-tracker {
-        list-style: none;
-        margin: 10px 0 0 0;
-        padding: 0;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        color: $color-light-grey-2;
-        >li {
-            position: relative;
-            display: table-cell;
-            span {
-                text-align: left;
-                display: block;
-                text-indent: 45%;
-            }
+$complete: $color-dark-blue;
+$active: $color-dark-blue;
+$mute: $color-white;
+.progress-tracker {
+    list-style: none;
+    margin: 2em 0px;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    color: $color-light-grey-2;
+    >li {
+        position: relative;
+        display: table-cell;
+        span {
+            text-align: left;
+            display: block;
+        }
 
+        &:before {
+            content: '\e911';
+            font-family: 'VTB-Icons';
+            font-size: 22px;
+            display: block;
+            background: $mute;
+            border: 1px solid $color-dark-blue;
+            width: 33px;
+            height: 33px;
+            text-align: center; //IE8 doesn't inherit this style
+            margin-bottom: 0.25em;
+            line-height: 33px;
+            border-radius: 100%;
+            position: relative;
+            z-index: 1000;
+            color: $mute;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            background: $color-dark-blue;
+            width: 100%;
+            height: 2px;
+            top: 1em;
+            z-index: -1;
+        }
+        &:last-child:after {
+            display: none;
+        }
+        &.is-complete {
+            color: $complete;
+            &:before,
+            &:after {
+                color: #FFF;
+                background: $complete;
+            }
             &:before {
                 content: '\e911';
-                font-family: 'VTB-Icons';
-                font-size: 22px;
-                display: block;
-                margin: 0 auto;
-                background: $mute;
-                border: 1px solid $color-dark-blue;
-                width: 33px;
-                height: 33px;
-                text-align: center; //IE8 doesn't inherit this style
-                margin-bottom: 0.25em;
-                line-height: 33px;
-                border-radius: 100%;
-                position: relative;
-                z-index: 1000;
-                color: $mute;
             }
-            &:after {
-                content: '\e911';
-                position: absolute;
-                display: block;
-                background: $color-dark-blue;
-                width: 100%;
-                height: 2px;
-                top: 1em;
-                left: 50%;
-                margin-left: 1.5em\9;
-                z-index: -1;
-            }
-            &:last-child:after {
-                display: none;
-            }
-            &.is-complete {
-                color: $complete;
-                &:before,
-                &:after {
-                    color: #FFF;
-                    background: $complete;
-                }
-                &:before {
-                    content: '\e911';
-                }
-            }
-            &.is-active {
+        }
+        &.is-active {
+            color: $active;
+            &:before {
                 color: $active;
-                &:before {
-                    color: $active;
-                    background: $active;
-                }
+                background: $active;
             }
         }
     }
+}
 
-    @include bp-small {
-        .progress-tracker {
-            >li {
-                span {
-                    display: block;
-                    text-indent: 0%;
-                    text-align: center;
-                }
+@include bp-small {
+    .progress-tracker {
+        >li {
+            span {
+                display: block;
+                text-indent: 0%;
+                text-align: left;
             }
         }
     }
-    /**
+}
+
+
+
+
+
+
+
+
+
+
+/**
    * Needed for IE8
    */
 
-    .progress-tracker__last:after {
-        display: none!important;
-    }
-    /**
+.progress-tracker__last:after {
+    display: none!important;
+}
+
+
+
+
+
+
+
+
+
+
+/**
    * Size Extensions
    */
 
-    .progress-tracker--medium {
-        font-size: 1.5em;
-    }
+.progress-tracker--medium {
+    font-size: 1.5em;
+}
 
-    .progress-tracker--large {
-        font-size: 2em;
-    }
-    /**
+.progress-tracker--large {
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+/**
  * Some Generic Stylings
  */
 
-    *,
-    *:after,
-    *:before {
-        box-sizing: border-box;
-    }
-
-    .progress-tracker {
-        margin-bottom: 3em;
-    }
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
