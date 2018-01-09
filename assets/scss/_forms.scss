@@ -82,3 +82,10 @@ legend {
         }
     }
 }
+
+input[type="file"]:focus+label {
+    border: 2px solid $focus-color;
+    outline: none;
+    box-shadow: none;
+    background-color: $cta-background-focus-color;
+}
