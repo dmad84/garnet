@@ -55,7 +55,7 @@
 
 .radio input[type=radio]:checked + label:before,
 .checkbox input[type=checkbox]:checked + label:before {
-    content: "\e911";
+    content: "\e929";
     font-family: 'VTB-Icons';
     font-size: 15px;
     color: white;
@@ -65,7 +65,7 @@
 
 .radio input[type=radio]:checked:disabled + label:before,
 .checkbox input[type=checkbox]:checked:disabled + label:before {
-    content: "\e911";
+    content: "\e929";
     font-family: 'VTB-Icons';
     font-size: 15px;
     color: white;
