@@ -54,8 +54,8 @@
 }
 
 .cta1 {
-    font-size: 17px;
-    width: 40%;
+    font-size: 24px;
+    width: 50%;
     position: relative;
     min-height: 150px;
     span {
@@ -74,7 +74,7 @@
 
 @include bp-medium {
     .cta1 {
-        font-size: 16px;
+        font-size: 20px;
         width: 77%;
     }
 }
@@ -82,7 +82,7 @@
 @include bp-large {
     .cta1 {
         min-height: 250px;
-        font-size: 25px;
+        font-size: 32px;
         span.icon-arrowforward-01 {
             font-size: 100px;
         }
@@ -170,7 +170,7 @@
 
 .cta-styled-box {
     color: $cta-box-color;
-    font-size: 17px;
+    font-size: 24px;
     width: 50%;
     min-height: 150px;
     background-color: $cta-box-background-color;
@@ -184,7 +184,7 @@
         .special-text {
             position: absolute;
             font-size: 2.5em;
-            top: 34%;
+            top: 22%;
             left: 8%;
             letter-spacing: -2px;
             font-family: 'FFMetaWebProMedium', Helvetica;
@@ -198,21 +198,21 @@
     }
     h2 {
         color: $cta-box-color;
-        font-size: 17px;
+        font-size: 24px;
         margin: 0;
     }
 }
 
 @include bp-medium {
     .cta-styled-box {
-        font-size: 16px;
+        font-size: 20px;
         width: 77%;
-    }
+    
     &.special {
         .special-text {
             position: absolute;
             font-size: 3em;
-            top: 21%;
+            top: 22%;
             left: 10%;
             letter-spacing: -6px;
         }
@@ -221,11 +221,11 @@
         font-size: 16px;
     }
 }
-
+}
 @include bp-large {
     .cta-styled-box {
         min-height: 250px;
-        font-size: 25px;
+        font-size: 32px;
         span.icon-arrowforward-01 {
             font-size: 100px;
         }
@@ -233,7 +233,7 @@
             .special-text {
                 position: absolute;
                 font-size: 3.5em;
-                top: 26%;
+                top: 17%;
                 left: 10%;
                 letter-spacing: -6px;
                 .percentage {
@@ -242,7 +242,7 @@
             }
         }
         h2 {
-            font-size: 25px;
+            font-size: 32px;
         }
     }
 }

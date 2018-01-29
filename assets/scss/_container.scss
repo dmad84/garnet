@@ -8,3 +8,29 @@
     padding: 0px 40px;
 }
 }
+.fixed-scrollable-container {
+	height: 250px;
+	clear: both;
+}
+@include bp-large {
+.fixed-scrollable-container {
+	height: 350px;
+}
+}
+.scrollable-content {
+	border: 1px solid darkgrey;
+	padding: 0 15px;
+	height: 99%;
+   overflow:auto;
+   &:focus {
+   	outline: none;
+   	border: 2px solid $focus-color;
+   }
+   h2 {
+   	@extend .a2;
+   }
+   p, i, em {
+   	@extend .t2;
+   	display: block;
+   }
+}
