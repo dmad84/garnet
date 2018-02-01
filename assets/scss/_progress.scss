@@ -2,6 +2,7 @@ $complete: $color-dark-blue;
 $active: $color-dark-blue;
 $mute: $color-white;
 .progress-tracker {
+
     list-style: none;
     margin: 2em 0px;
     padding: 0;
@@ -13,6 +14,7 @@ $mute: $color-white;
         position: relative;
         display: table-cell;
         span {
+            font-size: 15px;
             text-align: left;
             display: block;
         }
@@ -59,7 +61,7 @@ $mute: $color-white;
             }
         }
         &.is-active {
-            color: $active;
+            color: $color-black;
             &:before {
                 color: $active;
                 background: $active;
@@ -75,6 +77,18 @@ $mute: $color-white;
                 display: block;
                 text-indent: 0%;
                 text-align: left;
+            }
+        }
+    }
+}
+@include bp-large {
+    .progress-tracker {
+        >li {
+            span {
+                display: block;
+                text-indent: 0%;
+                text-align: left;
+                font-size: 20px;
             }
         }
     }

@@ -36,8 +36,12 @@ header {
         .logoHeader {
             .logo {
                 top: 55px;
-                left: -36px;
+                left: -52px;
             }
+            
+        }
+        .header-link {
+            margin-right: -30px;
         }
     }
 }
@@ -49,7 +53,7 @@ header {
         .logoHeader {
             .logo {
                 top: 70px;
-                left: -58px;
+                left: -75px;
                 height: 100px;
                 width: 300px;
             }
